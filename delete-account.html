@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supprimer mon compte — Business+</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafa;
+            color: #11181C;
+            line-height: 1.6;
+        }
+        .header {
+            background: #0D9488;
+            color: white;
+            padding: 24px 20px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; }
+        .header p { font-size: 14px; opacity: 0.9; margin-top: 4px; }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 24px 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .card h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #11181C;
+        }
+        .card p, .card li {
+            font-size: 15px;
+            color: #687076;
+            margin-bottom: 8px;
+        }
+        .card ul {
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+        .card li { margin-bottom: 6px; }
+        .warning {
+            background: #FEF3C7;
+            border-left: 4px solid #F59E0B;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .warning p { color: #92400E; font-size: 14px; margin: 0; }
+        .form-group {
+            margin-bottom: 16px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #11181C;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #11181C;
+            background: #f8fafa;
+        }
+        .form-group textarea { min-height: 80px; resize: vertical; }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background: #EF4444;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        .btn:hover { background: #DC2626; }
+        .footer {
+            text-align: center;
+            padding: 24px 20px;
+            color: #9BA1A6;
+            font-size: 13px;
+        }
+        .footer a { color: #0D9488; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Business+</h1>
+        <p>Suppression de compte</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>Supprimer mon compte</h2>
+            <p>Vous pouvez demander la suppression de votre compte Business+ et de toutes les données associées en remplissant le formulaire ci-dessous.</p>
+        </div>
+
+        <div class="card">
+            <h2>Données supprimées</h2>
+            <p>Lorsque votre compte est supprimé, les données suivantes sont définitivement effacées :</p>
+            <ul>
+                <li>Informations du profil (numéro de téléphone, nom de l'entreprise)</li>
+                <li>Toutes les transactions (revenus et dépenses)</li>
+                <li>Liste des contacts et clients</li>
+                <li>Inventaire et stock</li>
+                <li>Factures et historique de facturation</li>
+                <li>Registre des dettes</li>
+                <li>Données d'abonnement et historique de paiement</li>
+                <li>Invitations d'équipe et accès partagés</li>
+            </ul>
+        </div>
+
+        <div class="warning">
+            <p><strong>Attention :</strong> La suppression de votre compte est irréversible. Toutes vos données seront définitivement supprimées dans un délai de 30 jours suivant votre demande. Nous vous recommandons d'exporter vos données avant de procéder.</p>
+        </div>
+
+        <div class="card">
+            <h2>Formulaire de demande</h2>
+            <form action="mailto:memodoucom@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label>Numéro de téléphone (utilisé pour le compte)</label>
+                    <input type="tel" name="phone" placeholder="+242 XX XXX XX XX" required>
+                </div>
+                <div class="form-group">
+                    <label>Nom de l'entreprise</label>
+                    <input type="text" name="business_name" placeholder="Votre nom d'entreprise">
+                </div>
+                <div class="form-group">
+                    <label>Raison de la suppression (optionnel)</label>
+                    <select name="reason">
+                        <option value="">— Sélectionnez —</option>
+                        <option value="no_longer_needed">Je n'utilise plus l'application</option>
+                        <option value="switching">Je passe à un autre service</option>
+                        <option value="privacy">Préoccupations de confidentialité</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Commentaire (optionnel)</label>
+                    <textarea name="comment" placeholder="Dites-nous en plus..."></textarea>
+                </div>
+                <button type="submit" class="btn">Supprimer mon compte</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>Délai de traitement</h2>
+            <p>Votre demande sera traitée dans un délai de <strong>30 jours</strong>. Vous recevrez une confirmation par SMS une fois la suppression effectuée.</p>
+            <p>Pour toute question, contactez-nous via WhatsApp au <strong>+242 06 998 05 77</strong>.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Business+ — Block24</p>
+        <p><a href="https://businessplus24.com">Retour au site</a> · <a href="https://businessplus24.com/privacy">Politique de confidentialité</a></p>
+    </div>
+</body>
+</html>
